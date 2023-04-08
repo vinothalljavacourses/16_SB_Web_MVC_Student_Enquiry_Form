@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="students_tbl")
-public class Student {
+@Table(name="student_enquiries_tbl")
+public class StudentEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +24,6 @@ public class Student {
 	private String studentEmail;
 	private String studentGender;
 	private String studentCourse;
-	private String[] studentTimings;
+	private String studentTimings;
 
 }
